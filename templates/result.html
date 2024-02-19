@@ -1,0 +1,67 @@
+<!-- result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locked in Reality</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #00C9FF, #92FE9D);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        .container form {
+            margin-bottom: 20px;
+        }
+        .container input[type="text"] {
+            padding: 10px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .container button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .result img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter the description: </h1>
+        <form method="post">
+            <input type="text" name="keywords" placeholder="type here" autocomplete="off" required>
+            <button type="submit">Submit</button>
+        </form>
+        {% if image %}
+            <div class="result">
+                <img src="{{ url_for('static', filename=image) }}" alt="Image">
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
