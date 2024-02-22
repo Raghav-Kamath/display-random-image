@@ -9,7 +9,7 @@ import math
 
 minimum_threshold=40
 attempts=0
-minimum_number_of_attempts=4
+minimum_number_of_attempts=3
 app = Flask(__name__)
 
 # alter the description according

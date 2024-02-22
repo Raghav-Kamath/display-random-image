@@ -1,6 +1,6 @@
 # display-random-image
 
-I have changed the app.py to display the correct image after either a minimum number of attempts(4) or if the actual description and the entered description is >=40% similar
+I have changed the app.py to display the correct image after either if the actual description and the entered description is atlaest 40% similar or it displays consecutively after every minimum number of attempts(3rd time) 
 
 Updated the description in the _app.py_ file.
 
