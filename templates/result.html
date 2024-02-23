@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #00C9FF, #92FE9D);
+            background-image: url("static/locked_in_reality_background.jpg"); 
+            background-size: cover;
             margin: 0;
             padding: 0;
             display: flex;
@@ -42,16 +43,23 @@
         }
         .result {
             margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
+
         .result img {
             max-width: 100%;
+            max-height: 70vh; /* Set maximum height */
             border-radius: 5px;
+            margin-top: 20px; /* Add some margin to separate from the text box */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Enter the description: </h1>
+        <h1 style="color: #F5C4F5; font-size: 80px;padding-top: 40px;font-family: 'Times New Roman', Times, serif ">LOCKED IN<br>REALITY</h1>
+        <h1 style="color:#E1EEF9;font-style: oblique;">Enter the description: </h1>
         <form method="post">
             <input type="text" name="keywords" placeholder="Type here..." autocomplete="off" required>
             <button type="submit">Submit</button>

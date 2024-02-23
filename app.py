@@ -17,7 +17,7 @@ description = '''Curly hair, short beard, birthmark near moustache , ear piercin
 Wearing a kada, age around 20, small and sleepy eyes, slightly big forehead'''
 
 #alter the path to the correct image accordingly
-correct_image_path = "elon_musk.jpg"
+correct_image_path = "image1.jpg"
 
 # Function to display the correct image or a random incorrect image
 def display_image(keywords):
